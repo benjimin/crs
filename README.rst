@@ -4,6 +4,15 @@ crs
 Intended to facilitate a standard python interface for geospatial coordinate 
 reference systems.
 
+Probably also want a geoshape and georaster object (latter generalisable to xarray), 
+and wrappers of basic operations (file io, rasterise, vectorise, transform, intersect/union, etc).
+
+Note, crs support has been deprecated from GeoJSON specification.
+(Formely, this was a place that preferred *urn:ogc:def:crs:authority:version:name*
+identifiers, e.g. over EPSG identifiers.) It remains part of the Simple Features
+specification (which includes WKT strings and SRID lookup tables; CRS is apparently
+absent from WKB however).
+
 Surrounding geospatial python ecosystem
 ---------------------------------------
 
